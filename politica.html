@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Focus Shark</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sharkBlack: '#0a0a0a', 
+                        sharkPurple: '#4E3F82', 
+                        sharkGray: '#111827', 
+                        textLight: '#FFF2F2',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-sharkBlack text-textLight font-sans antialiased selection:bg-sharkPurple selection:text-white">
+
+    <header class="fixed w-full top-0 z-50 bg-sharkBlack/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center hover:opacity-80 transition">
+                    <span class="font-bold text-2xl tracking-tighter">Focus<span class="text-sharkPurple">Shark</span></span>
+                </a>
+                
+                <div class="flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-sharkPurple transition flex items-center">
+                        <i class="fa-solid fa-arrow-left mr-2"></i> Voltar ao Início
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-24">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="mb-12 border-b border-gray-800 pb-8">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Política de Privacidade</h1>
+                <p class="text-gray-400">Última atualização: <span class="text-sharkPurple font-bold">02 de Dezembro de 2025</span></p>
+            </div>
+
+            <div class="space-y-12 text-gray-300 leading-relaxed">
+
+                <section>
+                    <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+                        <span class="bg-sharkGray text-sharkPurple py-1 px-3 rounded mr-3 text-sm">01</span>
+                        Coleta de Dados e Permissões
+                    </h2>
+                    <p class="mb-4">
+                        Para fornecer a funcionalidade de "Allowlist" (Lista de Permissões) e "Blocklist" (Lista de Bloqueio), o <strong>Focus Shark</strong> solicita as seguintes permissões específicas:
+                    </p>
+                    <ul class="list-disc pl-6 space-y-3 marker:text-sharkPurple bg-sharkGray/50 p-6 rounded-lg border border-gray-800">
+                        <li>
+                            <strong class="text-white">Identity (Autenticação):</strong> Utilizamos a autenticação do Google apenas para verificar a validade da sessão.
+                        </li>
+                        <li>
+                            <strong class="text-white">YouTube Data API (Escopo <code>youtube.readonly</code>):</strong> Acessamos estritamente a lista de canais nos quais você está inscrito.
+                            <br><span class="text-sm text-gray-400 mt-1 block">Dados coletados: Nome do canal e URL da imagem de perfil (avatar).</span>
+                        </li>
+                    </ul>
+                    <p class="mt-4 text-sm text-gray-400 italic">
+                        * O uso da API é necessário para garantir a estabilidade da interface visual, evitando erros de leitura (CSS scraping) quando o YouTube atualiza seu layout.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+                        <span class="bg-sharkGray text-sharkPurple py-1 px-3 rounded mr-3 text-sm">02</span>
+                        Armazenamento de Dados
+                    </h2>
+                    <p class="mb-4">
+                        Sua privacidade é nossa prioridade absoluta. A arquitetura do Focus Shark foi desenhada para ser <strong class="text-sharkPurple">Local-First</strong>.
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-sharkGray p-5 rounded border border-gray-800">
+                            <i class="fa-solid fa-hard-drive text-sharkPurple mb-3 text-xl"></i>
+                            <h3 class="font-bold text-white mb-2">Armazenamento Local</h3>
+                            <p class="text-sm">Todos os dados (avatares, nomes e preferências) são salvos apenas no seu navegador via <code>chrome.storage.local</code>.</p>
+                        </div>
+                        <div class="bg-sharkGray p-5 rounded border border-gray-800">
+                            <i class="fa-solid fa-server text-sharkPurple mb-3 text-xl"></i>
+                            <h3 class="font-bold text-white mb-2">Sem Servidores Externos</h3>
+                            <p class="text-sm">Nós não possuímos banco de dados. Nenhum dado seu sai da sua máquina para nossos servidores.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+                        <span class="bg-sharkGray text-sharkPurple py-1 px-3 rounded mr-3 text-sm">03</span>
+                        Compartilhamento e Conformidade
+                    </h2>
+                    <p class="mb-4">
+                        Nós <strong>não vendemos</strong>, trocamos ou transferimos suas informações pessoais para terceiros.
+                    </p>
+                    <p class="mb-4 p-4 border-l-4 border-sharkPurple bg-sharkGray/30">
+                        O uso de informações recebidas das APIs do Google pelo Focus Shark adere à <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" class="text-sharkPurple underline hover:text-white transition">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de "Uso Limitado".
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-2xl font-bold text-white mb-4 flex items-center">
+                        <span class="bg-sharkGray text-sharkPurple py-1 px-3 rounded mr-3 text-sm">04</span>
+                        Contato
+                    </h2>
+                    <p>
+                        Se você tiver dúvidas sobre esta política ou sobre as práticas de privacidade do Focus Shark, entre em contato com nosso time de suporte.
+                    </p>
+                    <a href="mailto:suporte@focusshark.com" class="inline-flex items-center mt-4 text-sharkPurple hover:text-white font-bold transition">
+                        <i class="fa-solid fa-envelope mr-2"></i> suporte@focusshark.com
+                    </a>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer id="suporte" class="bg-sharkBlack border-t border-gray-800 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                 <div class="text-gray-600 text-sm">
+                    &copy; 2025 Focus Shark. Todos os direitos reservados. André Queiroz.
+                </div>
+                <div class="mt-4 space-x-6 text-sm">
+                    <a href="index.html" class="text-gray-500 hover:text-sharkPurple transition">Voltar para Início</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

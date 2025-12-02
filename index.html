@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Shark - Domine sua Produtividade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sharkBlack: '#0a0a0a', // Fundo escuro
+                        sharkPurple: '#4E3F82', // Amarelo destaque (semelhante ao print)
+                        sharkGray: '#111827', // Cinza para cartões
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Estilos personalizados para o carrossel de prints */
+        .scrolling-wrapper {
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox */
+        }
+        .scrolling-wrapper::-webkit-scrollbar {
+            display: none; /* Safari and Chrome */
+        }
+    </style>
+</head>
+<body class="bg-sharkBlack text-[#FFF2F2] font-sans antialiased">
+
+    <header class="fixed w-full top-0 z-50 bg-sharkBlack/90 backdrop-blur-sm border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="logo.png" class="h-20 w-20 p-1 object-contain" alt="Focus Shark Logo">
+                    <span class="font-bold text-2xl tracking-tighter">Focus<span class="text-sharkPurple">Shark</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#como-funciona" class="hover:text-sharkPurple transition">Como Funciona</a>
+                    <a href="#depoimentos" class="hover:text-sharkPurple transition">Depoimentos</a>
+                    <a href="#suporte" class="hover:text-sharkPurple transition">Suporte</a>
+                </div>
+                <div>
+                    <a href="#" class="bg-sharkPurple text-sharkBlack px-4 py-2 rounded font-bold hover:bg-[#090026]-400 transition text-sm animate-wiggle">
+                        Baixar Agora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="">
+                        <p class="text-sharkPurple font-semibold mb-4 tracking-wide uppercase text-sm">Pare de Procrastinar</p>
+                        <h1 class="text-5xl lg:text-7xl font-extrabold leading-tight mb-6">
+                            Domine o YouTube <br>
+                            & <span class="text-sharkPurple">Recupere seu Tempo!</span>
+                        </h1>
+                        <p class="text-gray-400 text-lg mb-8 max-w-lg">
+                            A extensão que transforma distrações em produtividade. Bloqueie Shorts, filtre recomendações e foque no que importa.
+                        </p>
+                        <a href="#" class="inline-block bg-sharkPurple text-sharkBlack text-lg px-8 py-4 rounded font-bold hover:bg-[#090026]-400 transition shadow-lg shadow-[#090026]-500/20">
+                            <i class="fa-brands fa-chrome mr-2"></i> Adicionar ao Chrome - É Grátis
+                        </a>
+                        <p class="mt-4 text-xs text-gray-500">* Compatível com Chrome, Brave, Edge e Opera.</p>
+                    </div>
+                    </img>
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-sharkPurple to-[#090026]-600 rounded-lg blur opacity-20"></div>
+                    <img src="https://placehold.co/600x500/1f1f1f/FCD34D?text=Mockup+Focus+Shark+no+Youtube" alt="Focus Shark Interface" class="relative rounded-lg shadow-2xl border border-gray-800 grayscale hover:grayscale-0 transition duration-500">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="border-y border-gray-800 bg-sharkBlack">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-500 text-sm mb-6 uppercase tracking-widest">Disponível nos melhores navegadores</p>
+            <div class="flex justify-center gap-12 flex-wrap opacity-60 grayscale">
+                <i class="fa-brands fa-chrome text-4xl hover:text-sharkPurple transition"></i>
+                <i class="fa-brands fa-edge text-4xl hover:text-sharkPurple transition"></i>
+                <i class="fa-brands fa-firefox-browser text-4xl hover:text-sharkPurple transition"></i>
+                <i class="fa-brands fa-opera text-4xl hover:text-sharkPurple transition"></i>
+            </div>
+        </div>
+    </div>
+
+    <section id="como-funciona" class="py-24 bg-[#0d0d0d]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                     <img src="https://placehold.co/500x400/1f1f1f/FCD34D?text=Ilustração+Foco+vs+Distração" alt="Foco" class="rounded-lg shadow-lg">
+                </div>
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-3xl lg:text-4xl font-bold mb-6">O Problema não é você, <br>é o <span class="text-sharkPurple underline decoration-wavy">Algoritmo.</span></h2>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        Você entra para ver um tutorial de 5 minutos e, quando percebe, passaram-se 2 horas vendo vídeos aleatórios. O Focus Shark atua como um escudo entre você e o vício digital.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mt-8">
+                        <div class="bg-sharkGray p-4 rounded border border-gray-800">
+                            <i class="fa-solid fa-ban text-sharkPurple text-2xl mb-2"></i>
+                            <h3 class="font-bold">Bloqueio de Shorts</h3>
+                        </div>
+                        <div class="bg-sharkGray p-4 rounded border border-gray-800">
+                            <i class="fa-solid fa-clock text-sharkPurple text-2xl mb-2"></i>
+                            <h3 class="font-bold">Timer de Foco</h3>
+                        </div>
+                        <div class="bg-sharkGray p-4 rounded border border-gray-800">
+                            <i class="fa-solid fa-ghost text-sharkPurple text-2xl mb-2"></i>
+                            <h3 class="font-bold">Modo Invisível</h3>
+                        </div>
+                        <div class="bg-sharkGray p-4 rounded border border-gray-800">
+                            <i class="fa-solid fa-chart-line text-sharkPurple text-2xl mb-2"></i>
+                            <h3 class="font-bold">Estatísticas</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Por dentro do <span class="text-sharkPurple">Shark</span></h2>
+                <p class="text-gray-400">Interface simples, limpa e feita para não distrair.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 bg-sharkGray">
+                    <img src="https://placehold.co/400x600/111/444?text=Tela+de+Bloqueio" class="w-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="font-bold text-lg">Tela de Bloqueio</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 bg-sharkGray">
+                    <img src="https://placehold.co/400x600/111/444?text=Dashboard" class="w-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="font-bold text-lg">Dashboard de Progresso</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl border border-gray-800 bg-sharkGray">
+                    <img src="https://placehold.co/400x600/111/444?text=Configurações" class="w-full object-cover transform group-hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent">
+                        <h3 class="font-bold text-lg">Configuração Personalizada</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="py-24 bg-[#0d0d0d] border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Quem usa, recomenda</h2>
+                <p class="text-gray-400 mt-2">Depoimentos reais postados publicamente.</p>
+            </div>
+            
+            <div class="scrolling-wrapper flex overflow-x-auto gap-6 pb-8 snap-x">
+                
+                <div class="snap-center shrink-0 w-80 md:w-96 bg-[#FFF2F2] rounded-lg p-2 shadow-lg opacity-90 hover:opacity-100 transition">
+                     <img src="https://placehold.co/400x200/ffffff/000000?text=Print+Social+1+(Ex:+Twitter)" alt="Review Social" class="w-full rounded">
+                </div>
+
+                <div class="snap-center shrink-0 w-80 md:w-96 bg-[#FFF2F2] rounded-lg p-2 shadow-lg opacity-90 hover:opacity-100 transition">
+                     <img src="https://placehold.co/400x300/ffffff/000000?text=Print+Social+2+(Ex:+Facebook)" alt="Review Social" class="w-full rounded">
+                </div>
+
+                <div class="snap-center shrink-0 w-80 md:w-96 bg-[#FFF2F2] rounded-lg p-2 shadow-lg opacity-90 hover:opacity-100 transition">
+                     <img src="https://placehold.co/400x250/ffffff/000000?text=Print+Social+3+(Ex:+Instagram)" alt="Review Social" class="w-full rounded">
+                </div>
+
+                 <div class="snap-center shrink-0 w-80 md:w-96 bg-[#FFF2F2] rounded-lg p-2 shadow-lg opacity-90 hover:opacity-100 transition">
+                    <img src="https://placehold.co/400x200/ffffff/000000?text=Print+Social+4" alt="Review Social" class="w-full rounded">
+               </div>
+
+            </div>
+            <div class="flex justify-center mt-4 text-gray-600">
+                <i class="fa-solid fa-arrow-left mr-2"></i> Arraste para o lado <i class="fa-solid fa-arrow-right ml-2"></i>
+            </div>
+        </div>
+    </section>
+
+    <footer id="suporte" class="bg-sharkBlack border-t border-gray-800 pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <div>
+                    <h2 class="text-3xl font-bold text-[#FFF2F2] mb-6">Precisa de Ajuda?</h2>
+                    <p class="text-gray-400 mb-8">
+                        Encontrou um bug ou tem uma sugestão? Mande uma mensagem. Nosso time técnico responde em até 24h.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center text-gray-300">
+                            <i class="fa-solid fa-envelope w-8 text-sharkPurple"></i>
+                            <span>suporte@focusshark.com</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i class="fa-solid fa-shield-halved w-8 text-sharkPurple"></i>
+                            <span>Seus dados ficam no seu dispositivo.</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-12 pt-8 border-t border-gray-800">
+                        <h4 class="text-sm font-bold text-sharkPurple uppercase mb-4">Legal & Privacidade</h4>
+                        <ul class="space-y-2 text-sm text-gray-500">
+                            <li><a href="politica.html" class="hover:text-[#FFF2F2] transition">Política de Privacidade</a></li>
+                            <li><a href="#" class="hover:text-[#FFF2F2] transition">Termos de Uso</a></li>
+                            <li><a href="#" class="hover:text-[#FFF2F2] transition">Política de Uso de Dados do Usuário</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-[#111] p-8 rounded-xl border border-gray-800">
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <div>
+                                <label class="text-xs text-gray-500 uppercase">Nome</label>
+                                <input type="text" class="w-full bg-[#1a1a1a] border border-gray-700 rounded p-3 text-[#FFF2F2] focus:border-sharkPurple focus:outline-none transition">
+                            </div>
+                            <div>
+                                <label class="text-xs text-gray-500 uppercase">Email</label>
+                                <input type="email" class="w-full bg-[#1a1a1a] border border-gray-700 rounded p-3 text-[#FFF2F2] focus:border-sharkPurple focus:outline-none transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-xs text-gray-500 uppercase">Assunto</label>
+                            <input type="text" class="w-full bg-[#1a1a1a] border border-gray-700 rounded p-3 text-[#FFF2F2] focus:border-sharkPurple focus:outline-none transition">
+                        </div>
+                        <div>
+                            <label class="text-xs text-gray-500 uppercase">Mensagem</label>
+                            <textarea rows="4" class="w-full bg-[#1a1a1a] border border-gray-700 rounded p-3 text-[#FFF2F2] focus:border-sharkPurple focus:outline-none transition"></textarea>
+                        </div>
+                        <button class="w-full bg-sharkPurple text-sharkBlack font-bold py-4 rounded hover:bg-[#090026]-400 transition">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center text-gray-600 text-sm">
+                &copy; 2025 Focus Shark. Todos os direitos reservados. André Queiroz.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
